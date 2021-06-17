@@ -2,17 +2,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
       <loc>https://thedaxshepherd.net/</loc>
-    </url>
-    
-    <url>
-      <loc>https://thedaxshepherd.net/about/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     </url>
     
     <url>
       <loc>https://thedaxshepherd.net/categories/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/tags/dax/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/tags/dax-studio/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/post/my-first-post/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/post/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     </url>
     
     <url>
       <loc>https://thedaxshepherd.net/tags/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/categories/tools/</loc>
+      <lastmod>2021-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://thedaxshepherd.net/about/</loc>
     </url>
     </urlset>

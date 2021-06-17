@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The Dax Shepherd</title>
+    <link>https://thedaxshepherd.net/post/</link>
+    <description>Recent content in Posts on The Dax Shepherd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://thedaxshepherd.net/post/my-first-post/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://thedaxshepherd.net/post/my-first-post/</guid>
+      <description>Sample DAX code:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) </description>
+    </item>
+    
+  </channel>
+</rss>
