@@ -13,8 +13,14 @@
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://thedaxshepherd.net/post/my-first-post/</guid>
-      <description>Sample DAX code:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) </description>
+      <description>Sample DAX code
+Prism:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) DAX Formatter:
+EVALUATE
+CALCULATE(
+SUM( AcctBal[Amount] ),
+AcctBal[Type] = &amp;lsquo;AA&amp;rsquo;
+)</description>
     </item>
     
   </channel>
