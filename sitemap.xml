@@ -1,18 +1,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-      <loc>thedaxshepherd.net/</loc>
+      <loc>https://thedaxshepherd.net/</loc>
     </url>
     
     <url>
-      <loc>thedaxshepherd.net/about/</loc>
+      <loc>https://thedaxshepherd.net/about/</loc>
     </url>
     
     <url>
-      <loc>thedaxshepherd.net/categories/</loc>
+      <loc>https://thedaxshepherd.net/categories/</loc>
     </url>
     
     <url>
-      <loc>thedaxshepherd.net/tags/</loc>
+      <loc>https://thedaxshepherd.net/tags/</loc>
     </url>
     </urlset>
