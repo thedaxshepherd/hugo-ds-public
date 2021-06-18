@@ -21,8 +21,7 @@
 
 
 	<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/custom.css">
-		<link rel="stylesheet" href="/css/custom2">
+		<link rel="stylesheet" href="/css/prism.css">
 		<link rel="alternate" type="application/rss+xml" href="/tags/dax-studio/index.xml" title="The Dax Shepherd">
 
 	<link rel="shortcut icon" href="https://thedaxshepherd.net/favicon.ico">
@@ -108,12 +107,13 @@ if (!doNotTrack) {
 	<div class="content list__excerpt post__content clearfix">
 		Sample DAX code
 Prism:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA') DAX Formatter:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA') CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA')  DAX Formatter:
 EVALUATE
 CALCULATE(
 SUM( AcctBal[Amount] ),
 AcctBal[Type] = &lsquo;AA&rsquo;
 )
+  Prism.plugins.NormalizeWhitespace.setDefaults({ remove-initial-line-feed: true, 'remove-indent': false, 'left-trim': false, 'right-trim': false, });  
 	</div>
 </article>
 
@@ -208,7 +208,7 @@ AcctBal[Type] = &lsquo;AA&rsquo;
 </footer>
 
 	<script async defer src="/js/menu.js"></script>
-	<script src="/js/custom.js"></script>
+	<script src="/js/prism.js"></script>
 	
 	
 </body>

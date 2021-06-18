@@ -10,12 +10,13 @@
 		<meta property="og:title" content="My First Post" />
 <meta property="og:description" content="Sample DAX code
 Prism:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) DAX Formatter:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;)  DAX Formatter:
 EVALUATE
 CALCULATE(
 SUM( AcctBal[Amount] ),
 AcctBal[Type] = &lsquo;AA&rsquo;
-)" />
+)
+  Prism.plugins.NormalizeWhitespace.setDefaults({ remove-initial-line-feed: true, &#39;remove-indent&#39;: false, &#39;left-trim&#39;: false, &#39;right-trim&#39;: false, });  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://thedaxshepherd.net/post/my-first-post/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-03-01T00:00:00&#43;00:00" />
@@ -25,30 +26,31 @@ AcctBal[Type] = &lsquo;AA&rsquo;
 		<meta itemprop="name" content="My First Post">
 <meta itemprop="description" content="Sample DAX code
 Prism:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) DAX Formatter:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;)  DAX Formatter:
 EVALUATE
 CALCULATE(
 SUM( AcctBal[Amount] ),
 AcctBal[Type] = &lsquo;AA&rsquo;
-)"><meta itemprop="datePublished" content="2021-03-01T00:00:00&#43;00:00" />
+)
+  Prism.plugins.NormalizeWhitespace.setDefaults({ remove-initial-line-feed: true, &#39;remove-indent&#39;: false, &#39;left-trim&#39;: false, &#39;right-trim&#39;: false, });  "><meta itemprop="datePublished" content="2021-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="20">
+<meta itemprop="wordCount" content="35">
 <meta itemprop="keywords" content="dax studio,dax," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My First Post"/>
 <meta name="twitter:description" content="Sample DAX code
 Prism:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) DAX Formatter:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;)  DAX Formatter:
 EVALUATE
 CALCULATE(
 SUM( AcctBal[Amount] ),
 AcctBal[Type] = &lsquo;AA&rsquo;
-)"/>
+)
+  Prism.plugins.NormalizeWhitespace.setDefaults({ remove-initial-line-feed: true, &#39;remove-indent&#39;: false, &#39;left-trim&#39;: false, &#39;right-trim&#39;: false, });  "/>
 
 
 	<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/custom.css">
-		<link rel="stylesheet" href="/css/custom2">
+		<link rel="stylesheet" href="/css/prism.css">
 
 	<link rel="shortcut icon" href="https://thedaxshepherd.net/favicon.ico">
 
@@ -126,9 +128,26 @@ if (!doNotTrack) {
 		</header><div class="content post__content clearfix">
 			<p>Sample DAX code</p>
 <p>Prism:</p>
-<pre><code class="language-dax" data-lang="dax">CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA')
-</code></pre><p>DAX Formatter:</p>
+<pre class="line-numbers"><code class="language-dax">
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA')
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = 'AA')
+</code></pre>
+<br>
+<br>
+<p>DAX Formatter:</p>
 <p><span class="Keyword" style="color:#035aca">EVALUATE</span><br><span class="Keyword" style="color:#035aca">CALCULATE</span><span class="Parenthesis" style="color:#808080"> (</span><br><span class="indent4">    </span><span class="Keyword" style="color:#035aca">SUM</span><span class="Parenthesis" style="color:#808080"> (</span> AcctBal[Amount] <span class="Parenthesis" style="color:#808080">)</span>,<br><span class="indent4">    </span>AcctBal[Type] = &lsquo;AA&rsquo;<br><span class="Parenthesis" style="color:#808080">)</span><br></p>
+<script src="prism.js"></script>
+<script src="plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+<script type="text/javascript">
+
+
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	remove-initial-line-feed: true,
+	'remove-indent': false,
+	'left-trim': false,
+	'right-trim': false,
+});
+</script>
 
 		</div>
 		<footer class="post__footer">
@@ -179,7 +198,7 @@ if (!doNotTrack) {
 </footer>
 
 	<script async defer src="/js/menu.js"></script>
-	<script src="/js/custom.js"></script>
+	<script src="/js/prism.js"></script>
 	
 	
 </body>

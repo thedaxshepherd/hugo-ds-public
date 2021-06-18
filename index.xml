@@ -15,12 +15,13 @@
       <guid>https://thedaxshepherd.net/post/my-first-post/</guid>
       <description>Sample DAX code
 Prism:
-CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) DAX Formatter:
+CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;) CALCULATE (SUM(AcctBal[Amount]), AcctBal[Type] = &#39;AA&#39;)  DAX Formatter:
 EVALUATE
 CALCULATE(
 SUM( AcctBal[Amount] ),
 AcctBal[Type] = &amp;lsquo;AA&amp;rsquo;
-)</description>
+)
+  Prism.plugins.NormalizeWhitespace.setDefaults({ remove-initial-line-feed: true, &#39;remove-indent&#39;: false, &#39;left-trim&#39;: false, &#39;right-trim&#39;: false, });  </description>
     </item>
     
     <item>
