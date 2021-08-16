@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/tags/dax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://thedaxshepherd.net/post/my-first-post/</link>
+      <link>https://thedaxshepherd.net/post/my-first-post/my-first-post/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://thedaxshepherd.net/post/my-first-post/</guid>
+      <guid>https://thedaxshepherd.net/post/my-first-post/my-first-post/</guid>
       <description>This article is to test out the syntax highlighting for DAX code using Prism. It also is to test out using tags and categories.</description>
     </item>
     

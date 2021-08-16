@@ -11,11 +11,6 @@
     </url>
     
     <url>
-      <loc>https://thedaxshepherd.net/categories/bi-development/</loc>
-      <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
       <loc>https://thedaxshepherd.net/categories/</loc>
       <lastmod>2021-03-20T00:00:00+00:00</lastmod>
     </url>
@@ -26,12 +21,7 @@
     </url>
     
     <url>
-      <loc>https://thedaxshepherd.net/tags/dax-studio/</loc>
-      <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://thedaxshepherd.net/post/my-first-post/</loc>
+      <loc>https://thedaxshepherd.net/post/my-first-post/my-first-post/</loc>
       <lastmod>2021-03-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -46,7 +36,7 @@
     </url>
     
     <url>
-      <loc>https://thedaxshepherd.net/categories/tools/</loc>
+      <loc>https://thedaxshepherd.net/categories/website/</loc>
       <lastmod>2021-03-20T00:00:00+00:00</lastmod>
     </url>
     </urlset>
