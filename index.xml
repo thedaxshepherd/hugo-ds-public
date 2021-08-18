@@ -23,7 +23,7 @@ My first computer was a Commodore 64. Since then I have been hooked on computers
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thedaxshepherd.net/mywork/</guid>
-      <description>Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to Power BI. I also create all the measures in DAX that are needed for the model.
+      <description>Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to Power BI. I develop all the measures in DAX that are needed for the model.
 I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019.</description>
     </item>
     
