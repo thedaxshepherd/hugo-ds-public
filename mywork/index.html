@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Work - The Dax Shepherd</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="My Work" />
+<meta property="og:description" content="Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to the Power BI visualization layer. I also create all the measures in DAX that are needed for the model.
+I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thedaxshepherd.net/mywork/" /><meta property="article:section" content="" />
+
+
+
+
+		<meta itemprop="name" content="My Work">
+<meta itemprop="description" content="Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to the Power BI visualization layer. I also create all the measures in DAX that are needed for the model.
+I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019.">
+
+<meta itemprop="wordCount" content="436">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My Work"/>
+<meta name="twitter:description" content="Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to the Power BI visualization layer. I also create all the measures in DAX that are needed for the model.
+I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019."/>
+
+
+	<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/prism.css">
+
+	<link rel="shortcut icon" href="https://thedaxshepherd.net/favicon.ico">
+
+	
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-135288661-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<header class="header">
+	
+	<div class="logo logo--mixed">
+		<div class="container">
+			<a class="logo__link" href="/" title="The DAX Shepherd" rel="home">
+				<div class="logo__item logo__imagebox">
+						<img class="logo__img" src="/img/placeholder.png">
+					</div><div class="logo__item logo__text">
+						<div class="logo__title">The DAX Shepherd</div>
+						<div class="logo__tagline">Musings on the Microsoft BI Stack</div>
+					</div>
+			</a>
+		</div>
+	</div>
+
+</header>
+
+<nav class="menu">
+	<div class="container">
+		<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+			<span class="menu__btn-title" tabindex="-1"></span>
+		</button>
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a class="menu__link" href="/">
+					
+					<span class="menu__text">Blog</span>
+					
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="/about/">
+					
+					<span class="menu__text">About Me</span>
+					
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="/mywork/">
+					
+					<span class="menu__text">My Work</span>
+					
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+
+	<div class="container wrapper flex">
+		<div class="primary">
+		
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">My Work</h1>
+			
+		</header><div class="content post__content clearfix">
+			<p>Since I work in a small IT shop I architect out the complete solution from the ground up. From
+pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to the Power BI visualization layer. I also create all the measures in DAX that are needed for the model.</p>
+<p>I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019. I try and follow best practices and only pull the columns needed and use Views to pull the data from - Model Auto build helps enforce some best practices too. I use DAX Studio for building queries, creating measures in DAX, and performance tuning. Currently, I am using both Tabular Editor 2 (3 does not have command line support yet) and 3.</p>
+<p>For the main model, I am using Model Auto Build which uses an Excel file with the metadata in it to build the model. Since it is essentially a C# script I can make changes to the code if needed and also raise an issue with the author if any bugs are found. Because there is no GUI is requires me to visualize the model and to draw out how it should look (yes, I use giant sketch pads still. It also emphasizes only pulling in the data that is needed to meet the requirements. Then I use Powershell scripts to deploy and refresh the model. With different branches on Azure DevOps, I can deploy to dev, test, and production.</p>
+<p>We have Excel and Power BI as the clients connecting to the model.</p>
+<p>Speaking of Excel I am a big fan of Power Query and love teaching people how to use it.</p>
+<p>We currently use TFS but I am transitioning some of my projects to git using GitHub and Azure DevOps.</p>
+<p>On my list of what I am currently learning or need to get up to speed on is C# (mainly for automating the data model creation in Tabular Editor), Dataflows, and Power BI Premium.</p>
+<p>On a daily basis, I also am using Windows Terminal and Visual Studio Code (in fact that is what I am writing my markdown with).</p>
+<p>My first love is SQL which I still interact with daily but I love working with the Tabular data model. I like making it easier for the business to extract value out of the many data sources they have without manual copying and pasting.</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+
+		</div>
+		
+	</div>
+	<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Copyright Jason Romans. All rights reserved.
+			<span class="footer__copyright-credits"></span>
+			
+		</div>
+		
+
+	</div>
+</footer>
+
+	<script async defer src="/js/menu.js"></script>
+	<script src="/js/prism.js"></script>
+	
+	
+</body>
+</html>

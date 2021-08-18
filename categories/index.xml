@@ -5,16 +5,6 @@
     <link>https://thedaxshepherd.net/categories/</link>
     <description>Recent content in Categories on The Dax Shepherd</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Website</title>
-      <link>https://thedaxshepherd.net/categories/website/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://thedaxshepherd.net/categories/website/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://thedaxshepherd.net/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
