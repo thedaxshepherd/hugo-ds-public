@@ -23,8 +23,7 @@ My first computer was a Commodore 64. Since then I have been hooked on computers
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thedaxshepherd.net/mywork/</guid>
-      <description>Since I work in a small IT shop I architect out the complete solution from the ground up. From pulling data from the source systems (Payroll, Netsuite ERP, JD Edwards) into SQL Server to modeling the data in SQL Server Analysis Services to Power BI. I develop all the measures in DAX that are needed for the model.
-I use SQL Server Integration Services to pull the data, store it in SQL Server 2019, build the data model using Tabular Editor with Model Auto Build (C# scripting) and deploy it to SQL Server Analysis Services 2019.</description>
+      <description>I work in a small IT shop. What this means is that I have to be self motivated to learn new skills and to apply them to projects I am working on. I had to have faith that if I build out data models using Microsoft BI that the business would see the value and benefit. A build and and they will come scenario. Lastly it means that I have to wear many hats from gathering requirements from the business to developing the best data model, to creating measures, and lastly to how the data will be presented on the canvas (whether Excel or Power BI).</description>
     </item>
     
     <item>
@@ -34,7 +33,7 @@ I use SQL Server Integration Services to pull the data, store it in SQL Server 2
       
       <guid>https://thedaxshepherd.net/resources/</guid>
       <description>This list is not an exhaustive list but I want to keep track of books, podcasts, and websites that I have found helpful.
-Podcasts Raw Data by P3 AdaptiveSQL Data PartnersData DrivenRunAsRadioPower Query MagicKasper On BI BIFocal - Clarifying Business Intelligence Books Definitive Guide to DAX - Second Edition PowerPivot Book Master Your Data with Excel and Power BI Websites SQLBIGreat blog posts as well as video courses.</description>
+Podcasts Raw Data by P3 AdaptiveAs soon as I hear the familiar &#34;Hello Friends&#34; it makes we feel like I am among friends discussing topics especially with how it impacts the businessSQL Data PartnersData DrivenRunAsRadioPower Query MagicKasper On BI BIFocal - Clarifying Business Intelligence Books Definitive Guide to DAX - Second Edition PowerPivot Book Master Your Data with Excel and Power BI Websites SQLBIGreat blog posts as well as video courses.</description>
     </item>
     
   </channel>
