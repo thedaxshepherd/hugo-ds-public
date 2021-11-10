@@ -6,44 +6,14 @@
     <description>Recent content in Posts on The Dax Shepherd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using Hugo and Github Pages for my blog</title>
+      <title>Using Hugo and GitHub Pages for my blog</title>
       <link>https://thedaxshepherd.net/post/website-hugo-for-blog/website-hugo-blog-git/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://thedaxshepherd.net/post/website-hugo-for-blog/website-hugo-blog-git/</guid>
-      <description>I would like to say that this blog has been relaunched on Github using Hugo. But if something never launched in the first place I am not sure it can be relaunched. I initially had a WordPress blog on SiteGround. It never made it out of test. But I did learn a lot about deploying WordPress and the different plugins. It did come in handy when my work started using WordPress for the company site.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://thedaxshepherd.net/post/my-first-post/my-first-post/</link>
-      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://thedaxshepherd.net/post/my-first-post/my-first-post/</guid>
-      <description>This article is to test out the syntax highlighting for DAX code using Prism. It also is to test out using tags and categories.</description>
-    </item>
-    
-    <item>
-      <title>Defining Measures in DAX Studio</title>
-      <link>https://thedaxshepherd.net/post/adding-measures-dax-studio/defining-measures-in-dax-studio/</link>
-      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://thedaxshepherd.net/post/adding-measures-dax-studio/defining-measures-in-dax-studio/</guid>
-      <description>After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.
-The first error occurs when I try to run the following code to define a measure in a query:
-DEFINE MEASURE [UnitPrice] = SUM(&#39;Sales&#39;[Unit Price])EVALUATECALCULATE([UnitPrice])This generates the following error: The syntax for &amp;lsquo;=&amp;rsquo; is incorrect. .
-The issue lies in not including the table name before the measure name.</description>
-    </item>
-    
-    <item>
-      <title>Font Test</title>
-      <link>https://thedaxshepherd.net/post/google-font-example/font/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thedaxshepherd.net/post/google-font-example/font/</guid>
-      <description>My name is Jason Romans and I work on the Microsoft business intelligence stack.  </description>
+      <description>I would like to say that this blog has been relaunched on GitHub using Hugo. If something never launched in the first place I am not sure it can be relaunched. I initially had a WordPress blog on SiteGround. It never made it out of test. I learned a lot about deploying WordPress and the different plugins. It did come in handy when my work started using WordPress for the company site.</description>
     </item>
     
   </channel>
