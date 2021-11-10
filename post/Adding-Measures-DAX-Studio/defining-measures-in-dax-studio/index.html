@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Defining Measures in DAX Studio - The Dax Shepherd</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+		<meta property="og:title" content="Defining Measures in DAX Studio" />
+<meta property="og:description" content="After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.
+The first error occurs when I try to run the following code to define a measure in a query:
+DEFINE MEASURE [UnitPrice] = SUM(&#39;Sales&#39;[Unit Price])EVALUATECALCULATE([UnitPrice])This generates the following error: The syntax for &lsquo;=&rsquo; is incorrect. .
+The issue lies in not including the table name before the measure name." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thedaxshepherd.net/post/adding-measures-dax-studio/defining-measures-in-dax-studio/" /><meta property="og:image" content="https://thedaxshepherd.net/images/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-16T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Defining Measures in DAX Studio">
+<meta itemprop="description" content="After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.
+The first error occurs when I try to run the following code to define a measure in a query:
+DEFINE MEASURE [UnitPrice] = SUM(&#39;Sales&#39;[Unit Price])EVALUATECALCULATE([UnitPrice])This generates the following error: The syntax for &lsquo;=&rsquo; is incorrect. .
+The issue lies in not including the table name before the measure name."><meta itemprop="datePublished" content="2021-08-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="445"><meta itemprop="image" content="https://thedaxshepherd.net/images/">
+<meta itemprop="keywords" content="DAX,DAX Studio," />
+		
+		<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://thedaxshepherd.net/images/"/>
+
+<meta name="twitter:title" content="Defining Measures in DAX Studio"/>
+<meta name="twitter:description" content="After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.
+The first error occurs when I try to run the following code to define a measure in a query:
+DEFINE MEASURE [UnitPrice] = SUM(&#39;Sales&#39;[Unit Price])EVALUATECALCULATE([UnitPrice])This generates the following error: The syntax for &lsquo;=&rsquo; is incorrect. .
+The issue lies in not including the table name before the measure name."/>
+
+
+	<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/prism.css">
+
+	<link rel="shortcut icon" href="https://thedaxshepherd.net/favicon.ico">
+
+	
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-135288661-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<header class="header">
+	
+	<div class="logo logo--mixed">
+		<div class="container">
+			<a class="logo__link" href="/" title="The DAX Shepherd" rel="home">
+				<div class="logo__item logo__imagebox">
+						<img class="logo__img" src="/img/placeholder.png">
+					</div><div class="logo__item logo__text">
+						<div class="logo__title">The DAX Shepherd</div>
+						<div class="logo__tagline">Musings on the Microsoft BI Stack</div>
+					</div>
+			</a>
+		</div>
+	</div>
+
+</header>
+
+<nav class="menu">
+	<div class="container">
+		<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+			<span class="menu__btn-title" tabindex="-1"></span>
+		</button>
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a class="menu__link" href="/">
+					
+					<span class="menu__text">Blog</span>
+					
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="/about/">
+					
+					<span class="menu__text">About Me</span>
+					
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="/mywork/">
+					
+					<span class="menu__text">My Work</span>
+					
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link" href="/resources/">
+					
+					<span class="menu__text">Resources</span>
+					
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+
+	<div class="container wrapper flex">
+		<div class="primary">
+		
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Defining Measures in DAX Studio</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-16T00:00:00Z">08-16-2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tools/" rel="category">Tools</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.</p>
+<p>The first error occurs when I try to run the following code to define a measure in a query:</p>
+<pre class="line-numbers"><code class="language-dax">
+DEFINE MEASURE [UnitPrice] = SUM('Sales'[Unit Price])
+EVALUATE
+CALCULATE([UnitPrice])
+</code></pre>
+<p>This generates the following error: 
+<span style="color:red">The syntax for &lsquo;=&rsquo; is incorrect. </span>.</p>
+<p>The issue lies in not including the table name before the measure name. This esentially indicates where the measure &ldquo;lives&rdquo; in the model and is needed for the full definition of the measure.</p>
+<p>So I am going to use the Sales table for the home of the measure. This does not impact how the measure works. I could have just as well chosen the Product table and the result would be the same. But if this were Power BI or Analysis Services where you place the measures is more about organization and making the user experience more intuitive.</p>
+<p>Here I have added the Sales table to the name of the measure.</p>
+<pre class="line-numbers"><code class="language-dax">
+DEFINE MEASURE 'Sales'[UnitPrice] = SUM('Sales'[Unit Price])
+</code></pre>
+<p>More info on defining a measure can be found here: <a href="https://dax.guide/st/measure/">https://dax.guide/st/measure/</a></p>
+<p>But running the full version of the code still generates an error:
+<span style="color:red">Query (1, 1) The expression specified in the query is not a valid table expression.</span></p>
+<p>Especially when you are learning to use DAX Studio you may run into this error a lot. What it is telling us is that the code we are running is not returning a table expression. We know that when we query using DAX we usually either return a scalar or a table value. If you are not sure what functions return which you can use a site like <a href="https://dax.guide/">https://dax.guide/</a> and it will show the input as well as the return type. Calculate returns a scalar whereas CalculateTable returns a Table.</p>
+<p>One trick to turn this Scalar into a table is to use the ROW function. It takes the name of the new column and the expression for the column and returns a table with one or more columns:</p>
+<pre class="line-numbers"><code class="language-dax">
+DEFINE MEASURE 'Sales'[UnitPrice] = SUM('Sales'[Unit Price])
+EVALUATE
+ROW("Unit Price", CALCULATE([UnitPrice]))
+</code></pre>
+<p>This runs successfully
+<img src="/post/Adding-Measures-DAX-Studio/images/DAX_Studio_Result.png" alt="Result" width=".2" height=".99"/></p>
+<p>With the ROW function we can give the column a name. We can also repeat this for as many columns as we need.</p>
+<p>Another option is we can use the table constructor syntax to create a table.</p>
+<pre class="line-numbers"><code class="language-dax">
+{ 
+  (CALCULATE([UnitPrice])) 
+}
+</code></pre>
+<p>But this does not allow us to name the column. But we can add multiple rows to each column if we want.</p>
+<p>These two issues are ones that I encountered a lot when starting to use DAX Studio. Mostly due to the time period between when I would be using DAX Studio.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dax/" rel="tag">DAX</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dax-studio/" rel="tag">DAX Studio</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/google-font-example/font/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;</span>
+			<p class="pager__title">Font Test</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/my-first-post/my-first-post/" rel="next">
+			<span class="pager__subtitle">&thinsp;»</span>
+			<p class="pager__title">My First Post</p>
+		</a>
+	</div>
+</nav>
+
+
+<section class="comments">
+	<script src="https://utteranc.es/client.js"
+        repo="thedaxshepherd/hugo-ds-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</section>
+
+
+		</div>
+		
+	</div>
+	<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Copyright Jason Romans. All rights reserved.
+			<span class="footer__copyright-credits"></span>
+			
+		</div>
+		
+
+	</div>
+</footer>
+
+	<script async defer src="/js/menu.js"></script>
+	<script src="/js/prism.js"></script>
+	
+	
+</body>
+</html>

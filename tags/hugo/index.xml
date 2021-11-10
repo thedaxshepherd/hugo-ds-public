@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Website on The Dax Shepherd</title>
-    <link>https://thedaxshepherd.net/categories/website/</link>
-    <description>Recent content in Website on The Dax Shepherd</description>
+    <title>Hugo on The Dax Shepherd</title>
+    <link>https://thedaxshepherd.net/tags/hugo/</link>
+    <description>Recent content in Hugo on The Dax Shepherd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/categories/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Hugo and Github Pages for my blog</title>
       <link>https://thedaxshepherd.net/post/website-hugo-for-blog/website-hugo-blog-git/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://thedaxshepherd.net/post/website-hugo-for-blog/website-hugo-blog-git/</guid>
       <description>I would like to say that this blog has been relaunched on Github using Hugo. But if something never launched in the first place I am not sure it can be relaunched. I initially had a WordPress blog on SiteGround. It never made it out of test. But I did learn a lot about deploying WordPress and the different plugins. It did come in handy when my work started using WordPress for the company site.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://thedaxshepherd.net/post/my-first-post/my-first-post/</link>
-      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://thedaxshepherd.net/post/my-first-post/my-first-post/</guid>
-      <description>This article is to test out the syntax highlighting for DAX code using Prism. It also is to test out using tags and categories.</description>
     </item>
     
   </channel>

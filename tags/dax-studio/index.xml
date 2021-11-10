@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dax studio on The Dax Shepherd</title>
+    <title>DAX Studio on The Dax Shepherd</title>
     <link>https://thedaxshepherd.net/tags/dax-studio/</link>
-    <description>Recent content in dax studio on The Dax Shepherd</description>
+    <description>Recent content in DAX Studio on The Dax Shepherd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/tags/dax-studio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://thedaxshepherd.net/tags/dax-studio/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://thedaxshepherd.net/post/my-first-post/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Defining Measures in DAX Studio</title>
+      <link>https://thedaxshepherd.net/post/adding-measures-dax-studio/defining-measures-in-dax-studio/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://thedaxshepherd.net/post/my-first-post/</guid>
-      <description>This article is to test out the syntax highlighting for DAX code using Prism. It also is to test out using tags and categories.</description>
+      <guid>https://thedaxshepherd.net/post/adding-measures-dax-studio/defining-measures-in-dax-studio/</guid>
+      <description>After a period of not defining measures in DAX Studio, I seem to make the same two mistakes.
+The first error occurs when I try to run the following code to define a measure in a query:
+DEFINE MEASURE [UnitPrice] = SUM(&#39;Sales&#39;[Unit Price])EVALUATECALCULATE([UnitPrice])This generates the following error: The syntax for &amp;lsquo;=&amp;rsquo; is incorrect. .
+The issue lies in not including the table name before the measure name.</description>
     </item>
     
   </channel>
